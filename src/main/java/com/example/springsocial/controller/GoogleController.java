@@ -21,7 +21,7 @@ import java.nio.file.Paths;
 @Controller
 public class GoogleController {
 
-    @GetMapping("/get-text")
+    @GetMapping("/")
     public @ResponseBody
     String getText() throws IOException {
         String meta = "<meta name=\"google-site-verification\" content=\"UN_fp_79LT3fc0Vv-Nll5I5UYLZ8bM0VTk1fvr9ugTU\" />";
