@@ -24,7 +24,15 @@ public class GoogleController {
     @GetMapping("/")
     public @ResponseBody
     String getText() throws IOException {
-        String meta = "<meta name=\"google-site-verification\" content=\"UN_fp_79LT3fc0Vv-Nll5I5UYLZ8bM0VTk1fvr9ugTU\" />";
+        String meta = "<html>\n" +
+                "<head>\n" +
+                "<meta name=\"google-site-verification\" content=\"UN_fp_79LT3fc0Vv-Nll5I5UYLZ8bM0VTk1fvr9ugTU\" />\n" +
+                "<title> My title </title>\n" +
+                "</head>\n" +
+                "<body>\n" +
+                "page contents\n" +
+                "</body>\n" +
+                "</html>\n";
         return meta;
     }
 
